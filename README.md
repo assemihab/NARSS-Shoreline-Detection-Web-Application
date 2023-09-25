@@ -22,13 +22,14 @@ pip install pyqt5
 "
 after activating coastsat venv 
 
-write thie command
+write this command
 
     pip install Django==4.2.5
 
 cd to go to the "backend" directory
 
 then write thie command to activate the server
+
     py manage.py runserver
 
 to activate the frontend open cmd on the "frontend" directory then write this command after install node.js
