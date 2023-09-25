@@ -1,0 +1,43 @@
+@use "../../scss/variables/colors" as *;
+
+.submit-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px 5px;
+  flex-wrap: wrap;
+  margin: 5px auto;
+  width: 100%;
+  .sub-btn,
+  .home-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin: auto;
+    transition: 0.3s;
+    border-radius: 6px;
+    i {
+      margin-right: 5px;
+    }
+  }
+  .sub-btn {
+    padding: 9px 16px;
+    border: none;
+    background-color: rgba($greenColor, 20%);
+    color: $greenColor;
+    &:hover {
+      background-color: $greenColor;
+      color: #fff;
+    }
+  }
+  .home-btn {
+    padding: 6px 12px;
+    background-color: rgba($blueColor, 20%);
+    color: $blueColor;
+    &:hover {
+      background-color: $blueColor;
+      color: #fff;
+    }
+  }
+}

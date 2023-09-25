@@ -1,0 +1,79 @@
+.sidebar {
+  position: relative;
+  background-color: #fff;
+  border-right: 1px solid #e9e9e9;
+  width: 350px;
+  transition: 0.3s;
+}
+.sidebar .nsbh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin-top: 18px;
+  margin-bottom: 30px;
+}
+.sidebar .nsbh::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: calc(100% - 120px);
+  background-color: #333;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sidebar .nsbh::after {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #0075ff;
+  outline: 3px solid #fff;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sidebar .nsbh img {
+  width: 45px;
+  height: 45px;
+}
+.sidebar .nsbh h3 {
+  margin-top: 15px;
+  font-weight: bold;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-size: 22px;
+}
+.sidebar .links li a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  color: #777;
+}
+.sidebar .links li a:hover {
+  background-color: #ededed;
+  color: #0075ff;
+  background-color: rgba(0, 117, 255, 0.1);
+}
+.sidebar .links li a:hover span {
+  color: #0075ff;
+}
+.sidebar .links li a span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #777;
+  margin-left: 10px;
+  transition: 0.3s;
+}/*# sourceMappingURL=sidebar.css.map */

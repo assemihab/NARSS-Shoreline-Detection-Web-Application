@@ -1,0 +1,14 @@
+@use "../../scss/mixins/sidesection" as *;
+
+@include sideSection(merge-projections, mp-info, mp-items);
+
+.mp-items {
+  .input-field {
+    &:nth-child(2) {
+      width: calc(100% - 70px) !important;
+    }
+  }
+  .submit-btn {
+    justify-content: space-evenly;
+  }
+}

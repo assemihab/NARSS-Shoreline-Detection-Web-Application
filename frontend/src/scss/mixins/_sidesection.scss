@@ -1,0 +1,42 @@
+@use "../variables/colors" as *;
+
+@mixin sideSection($mainClass, $infoClass, $itemsClass) {
+  .#{$mainClass} {
+    min-height: calc(100vh - 150px);
+    background-color: #f1f5f9;
+    display: flex;
+    position: relative;
+    .#{$infoClass} {
+      width: 350px;
+      background-color: #fff;
+      border-right: 1px solid #e9e9e9;
+      transition: 0.3s;
+      .#{$itemsClass} {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        height: calc(100vh - 218.5px);
+        overflow-y: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+        &::-webkit-scrollbar {
+          width: 6px;
+          &-track {
+            background-color: #f1f5f9;
+            border-radius: 0 0 10px 10px;
+          }
+          &-thumb {
+            background-color: $blueColor;
+            border-radius: 0 0 10px 10px;
+          }
+        }
+        .input-field {
+          width: 100%;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}

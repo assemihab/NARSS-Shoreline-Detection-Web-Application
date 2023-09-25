@@ -1,0 +1,68 @@
+.input-field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.input-field.f-ip span {
+  margin-right: 10px;
+  color: #191919;
+  font-weight: bold;
+}
+.input-field.f-ip input {
+  display: none;
+}
+.input-field.f-ip label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background-color: #0075ff;
+  color: #fff;
+  transition: 0.3s;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.input-field.f-ip label:hover {
+  background-color: #0d69d5;
+}
+.input-field.f-ip label i {
+  position: relative;
+  margin-right: 10px;
+  z-index: 2;
+}
+.input-field.f-ip label span {
+  color: #fff;
+  margin-right: 0;
+  font-weight: normal;
+  position: relative;
+  z-index: 2;
+}
+.input-field:not(.f-ip) label {
+  margin-right: 10px;
+  color: #191919;
+  font-weight: bold;
+}
+.input-field:not(.f-ip) input:not([type=checkbox]) {
+  padding: 5px;
+  caret-color: #0075ff;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  background-color: #eee;
+  color: #191919;
+  transition: 0.3s;
+}
+.input-field:not(.f-ip) input:not([type=checkbox]):hover {
+  border-color: #0075ff;
+}
+.input-field:not(.f-ip) input[type=checkbox] {
+  border-color: #bebebe;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.input-field:not(.f-ip) input[type=checkbox]:hover, .input-field:not(.f-ip) input[type=checkbox]:checked {
+  border-color: #0075ff;
+}/*# sourceMappingURL=inputfield.css.map */

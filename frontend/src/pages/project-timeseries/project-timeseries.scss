@@ -1,0 +1,34 @@
+@use "../../scss/variables/colors" as *;
+@use "../../scss/mixins/sidesection" as *;
+
+@include sideSection(project-timeseries, pt-info, pt-items);
+
+.pt-items {
+  .select-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    span {
+      color: $darkColor;
+      font-weight: bold;
+      user-select: none;
+    }
+    select {
+      padding: 3px 6px;
+      caret-color: $blueColor;
+      border: 2px solid transparent;
+      border-radius: 10px;
+      background-color: #eee;
+      color: $darkColor;
+      transition: 0.3s;
+      &:hover {
+        border-color: $blueColor;
+      }
+    }
+  }
+  .submit-btn {
+    justify-content: space-evenly;
+  }
+}

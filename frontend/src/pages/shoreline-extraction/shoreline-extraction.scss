@@ -1,0 +1,13 @@
+@use "../../scss/variables/colors" as *;
+@use "../../scss/mixins/sidesection" as *;
+
+@include sideSection(shoreline-extraction, se-info, se-items);
+
+.se-items {
+  .input-field {
+    &:nth-child(5),
+    &:nth-child(6) {
+      width: calc(100% - 80px) !important;
+    }
+  }
+}

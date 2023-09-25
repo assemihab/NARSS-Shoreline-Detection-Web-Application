@@ -1,0 +1,68 @@
+.project-timeseries {
+  min-height: calc(100vh - 150px);
+  background-color: #f1f5f9;
+  display: flex;
+  position: relative;
+}
+.project-timeseries .pt-info {
+  width: 350px;
+  background-color: #fff;
+  border-right: 1px solid #e9e9e9;
+  transition: 0.3s;
+}
+.project-timeseries .pt-info .pt-items {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  height: calc(100vh - 218.5px);
+  overflow-y: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.project-timeseries .pt-info .pt-items::-webkit-scrollbar {
+  width: 6px;
+}
+.project-timeseries .pt-info .pt-items::-webkit-scrollbar-track {
+  background-color: #f1f5f9;
+  border-radius: 0 0 10px 10px;
+}
+.project-timeseries .pt-info .pt-items::-webkit-scrollbar-thumb {
+  background-color: #0075ff;
+  border-radius: 0 0 10px 10px;
+}
+.project-timeseries .pt-info .pt-items .input-field {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.pt-items .select-field {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.pt-items .select-field span {
+  color: #191919;
+  font-weight: bold;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.pt-items .select-field select {
+  padding: 3px 6px;
+  caret-color: #0075ff;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-color: #eee;
+  color: #191919;
+  transition: 0.3s;
+}
+.pt-items .select-field select:hover {
+  border-color: #0075ff;
+}
+.pt-items .submit-btn {
+  justify-content: space-evenly;
+}/*# sourceMappingURL=project-timeseries.css.map */

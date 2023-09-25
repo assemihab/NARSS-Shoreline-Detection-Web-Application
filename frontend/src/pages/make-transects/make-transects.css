@@ -1,0 +1,42 @@
+.make-transects {
+  min-height: calc(100vh - 150px);
+  background-color: #f1f5f9;
+  display: flex;
+  position: relative;
+}
+.make-transects .mt-info {
+  width: 350px;
+  background-color: #fff;
+  border-right: 1px solid #e9e9e9;
+  transition: 0.3s;
+}
+.make-transects .mt-info .mt-items {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  height: calc(100vh - 218.5px);
+  overflow-y: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.make-transects .mt-info .mt-items::-webkit-scrollbar {
+  width: 6px;
+}
+.make-transects .mt-info .mt-items::-webkit-scrollbar-track {
+  background-color: #f1f5f9;
+  border-radius: 0 0 10px 10px;
+}
+.make-transects .mt-info .mt-items::-webkit-scrollbar-thumb {
+  background-color: #0075ff;
+  border-radius: 0 0 10px 10px;
+}
+.make-transects .mt-info .mt-items .input-field {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.mt-items .submit-btn {
+  justify-content: space-evenly;
+}/*# sourceMappingURL=make-transects.css.map */

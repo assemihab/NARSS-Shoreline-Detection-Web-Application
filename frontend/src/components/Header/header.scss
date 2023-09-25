@@ -1,0 +1,98 @@
+@use "../../scss/variables/colors" as *;
+
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e9e9e9;
+  @media (max-width: 360px) {
+    padding: 0;
+  }
+  @media (max-width: 991px) {
+    .middle-section,
+    .right-section {
+      display: none;
+    }
+  }
+  .left-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    .logos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 39px;
+        height: 39px;
+        border-radius: 50%;
+      }
+    }
+    .site-name {
+      margin-left: 15px;
+      width: 250px;
+      font-size: 18px;
+      font-weight: bold;
+      user-select: none;
+    }
+  }
+  .middle-section {
+    font-size: 25px;
+    font-weight: bold;
+    user-select: none;
+  }
+  .right-section {
+    height: 100%;
+    margin-right: 10px;
+    .links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0 10px;
+      height: 100%;
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        position: relative;
+        transition: 0.3s;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 3px;
+          background-color: $blueColor;
+          top: 0;
+          left: 0;
+          transition: 0.3s;
+        }
+        &.active,
+        &:hover:not(.active) {
+          background-color: #fafafa;
+          a {
+            color: $blueColor;
+          }
+          &::after {
+            width: 100%;
+          }
+        }
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          padding: 0 10px;
+          gap: 0 8px;
+          color: $darkColor;
+          font-size: 18px;
+          font-weight: bold;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+@use "../../scss/variables/colors" as *;
+@use "../../scss/mixins/sidesection" as *;
+
+@include sideSection(get-lts, glts-info, glts-items);

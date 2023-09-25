@@ -1,0 +1,187 @@
+@use "../../scss/variables/colors" as *;
+@use "../../scss/mixins/sidesection" as *;
+
+@include sideSection(download-imagery, di-info, items);
+.download-imagery {
+  .di-overlay {
+    &.true {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 9999;
+      background-color: rgba($darkColor, 0.3);
+    }
+  }
+  .di-popup {
+    &.false {
+      display: none;
+    }
+    &.true {
+      position: absolute;
+      width: 50%;
+      height: 98%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      border-radius: 6px;
+      z-index: 10000;
+      display: flex;
+      flex-direction: column;
+      .cls-btn-div {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        .cls-btn {
+          margin: 5px 10px 0 0;
+          padding: 15px;
+          background-color: rgba($redColor, 0.3);
+          border-radius: 10px;
+          cursor: pointer;
+          user-select: none;
+          width: fit-content;
+        }
+      }
+      .imgs-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        .img-box {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          gap: 10px;
+          background-color: $lightGreyColor;
+          border-radius: 6px;
+          padding: 15px;
+          .ib {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+.items {
+  .input-field {
+    &:nth-child(4) {
+      width: calc(100% - 40px) !important;
+    }
+  }
+  .cds {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border-top: 1px solid #ddd;
+    padding-bottom: 10px;
+    width: 100%;
+    h3 {
+      position: relative;
+      font-size: 26px;
+      padding: 8px 12px 8px 50px;
+      background-color: $blueColor;
+      color: #fff;
+      margin-top: 10px;
+      border-radius: 10px;
+      user-select: none;
+      &::before {
+        font-family: bootstrap-icons;
+        content: "\f3e7";
+        position: absolute;
+        left: 6px;
+        top: 6px;
+        font-size: 19px;
+        padding: 6px 8px;
+        border-radius: 50%;
+        background-color: #fff;
+        color: $redColor;
+      }
+    }
+    .c-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 100%;
+      .c-box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:not(:last-of-type) {
+          margin-bottom: 20px;
+        }
+        label {
+          margin-right: 5px;
+          font-weight: bold;
+        }
+        input {
+          padding: 5px;
+          caret-color: $blueColor;
+          border: 2px solid transparent;
+          border-radius: 6px;
+          background-color: #eee;
+          color: $darkColor;
+          transition: 0.3s;
+          &:hover {
+            border-color: $blueColor;
+          }
+        }
+      }
+    }
+  }
+  .sats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    input {
+      display: none;
+      &:checked + .sat {
+        border-color: $blueColor;
+        .sat-title {
+          color: $blueColor;
+        }
+      }
+    }
+    .sat {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+      padding: 15px;
+      border: 2px solid #dddddd;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+        border-color: rgba($blueColor, 70%);
+        .sat-title {
+          color: rgba($blueColor, 70%);
+        }
+      }
+      img {
+        width: 40px;
+        height: 40px;
+      }
+      .sat-title {
+        color: #5c5c5c;
+        font-size: 16px;
+        transition: 0.3s;
+      }
+    }
+  }
+}

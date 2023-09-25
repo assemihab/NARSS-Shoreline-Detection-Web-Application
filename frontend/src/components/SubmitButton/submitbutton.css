@@ -1,0 +1,42 @@
+.submit-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px 5px;
+  flex-wrap: wrap;
+  margin: 5px auto;
+  width: 100%;
+}
+.submit-btn .sub-btn,
+.submit-btn .home-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin: auto;
+  transition: 0.3s;
+  border-radius: 6px;
+}
+.submit-btn .sub-btn i,
+.submit-btn .home-btn i {
+  margin-right: 5px;
+}
+.submit-btn .sub-btn {
+  padding: 9px 16px;
+  border: none;
+  background-color: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+}
+.submit-btn .sub-btn:hover {
+  background-color: #22c55e;
+  color: #fff;
+}
+.submit-btn .home-btn {
+  padding: 6px 12px;
+  background-color: rgba(0, 117, 255, 0.2);
+  color: #0075ff;
+}
+.submit-btn .home-btn:hover {
+  background-color: #0075ff;
+  color: #fff;
+}/*# sourceMappingURL=submitbutton.css.map */

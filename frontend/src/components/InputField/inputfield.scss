@@ -1,0 +1,75 @@
+@use "../../scss/variables/colors" as *;
+
+.input-field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  &.f-ip {
+    span {
+      margin-right: 10px;
+      color: $darkColor;
+      font-weight: bold;
+    }
+    input {
+      display: none;
+    }
+    label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8px 12px;
+      border-radius: 12px;
+      background-color: $blueColor;
+      color: #fff;
+      transition: 0.3s;
+      overflow: hidden;
+      cursor: pointer;
+      user-select: none;
+      &:hover {
+        background-color: $blueAltColor;
+      }
+      i {
+        position: relative;
+        margin-right: 10px;
+        z-index: 2;
+      }
+      span {
+        color: #fff;
+        margin-right: 0;
+        font-weight: normal;
+        position: relative;
+        z-index: 2;
+      }
+    }
+  }
+  &:not(.f-ip) {
+    label {
+      margin-right: 10px;
+      color: $darkColor;
+      font-weight: bold;
+    }
+    input {
+      &:not([type="checkbox"]) {
+        padding: 5px;
+        caret-color: $blueColor;
+        border: 2px solid transparent;
+        border-radius: 6px;
+        background-color: #eee;
+        color: $darkColor;
+        transition: 0.3s;
+        &:hover {
+          border-color: $blueColor;
+        }
+      }
+      &[type="checkbox"] {
+        border-color: #bebebe;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover,
+        &:checked {
+          border-color: $blueColor;
+        }
+      }
+    }
+  }
+}

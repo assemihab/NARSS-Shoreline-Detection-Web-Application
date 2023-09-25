@@ -1,0 +1,19 @@
+.new-google-map {
+  position: relative;
+  width: 100%;
+}
+.new-google-map .toggle {
+  position: absolute;
+  z-index: 1;
+}
+.new-google-map .roadmap-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+.new-google-map .new-map {
+  height: calc(100vh - 150px);
+}/*# sourceMappingURL=newgooglemap.css.map */

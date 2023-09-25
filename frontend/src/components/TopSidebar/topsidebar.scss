@@ -1,0 +1,54 @@
+@use "../../scss/variables/colors" as *;
+
+.top-sidebar {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  overflow-x: auto;
+  border-bottom: 1px solid #eee;
+  scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+    height: 5px;
+    &-track {
+      background-color: #f1f5f9;
+      border-radius: 10px;
+    }
+    &-thumb {
+      background-color: $blueColor;
+      border-radius: 10px;
+    }
+  }
+  .icn-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-color: rgba($blueColor, 10%);
+    min-width: fit-content;
+    cursor: pointer;
+    &:hover {
+      .btitle {
+        display: block;
+      }
+    }
+    &.active {
+      border: 2px solid $blueColor;
+      .btitle {
+        display: block;
+      }
+    }
+    i {
+      color: $blueColor;
+    }
+    .btitle {
+      display: none;
+      margin-left: 10px;
+      color: $darkColor;
+    }
+  }
+}
