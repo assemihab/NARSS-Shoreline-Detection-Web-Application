@@ -37,15 +37,15 @@ to activate the frontend open cmd on the "frontend" directory then write this co
     npm start
     
 
-![image](https://github.com/assemihab/NARSS-Shoreline-Detection-Web-Application/assets/87605812/17fc9893-2003-4b08-8935-4e7ddb7a21a6)
+![image](images/home_page.png)
 
-![image](https://github.com/assemihab/NARSS-Shoreline-Detection-Web-Application/assets/87605812/b48d28fe-e952-4e9c-9fd8-53cdffb27e5d)
+![image](images/area.png)
 
-![image](https://github.com/assemihab/NARSS-Shoreline-Detection-Web-Application/assets/87605812/52d48577-f87b-4853-9156-9636d7a3d592)
+![image](images/Downloading.png)
 
-![image](https://github.com/assemihab/NARSS-Shoreline-Detection-Web-Application/assets/87605812/c145f3be-f415-4d0a-8c51-9f3ce725da7b)
+![image](images/Downloading_server.png)
 
-![image](https://github.com/assemihab/NARSS-Shoreline-Detection-Web-Application/assets/87605812/7bbc0a44-ea70-46c2-a57d-ccbae28eab50)
+![image](images/Images_links.png)
 
 
 
