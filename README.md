@@ -32,6 +32,7 @@ then write thie command to activate the server
     py manage.py runserver
 
 to activate the frontend open cmd on the "frontend" directory then write this command after install node.js
+
     npm start
     
 
