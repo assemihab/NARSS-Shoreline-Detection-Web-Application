@@ -3,10 +3,10 @@
 
  First, you need to activate the backend. You'll require the Conda package installer to install the dependencies of the environment, all of which are listed in the requirements file in the backend folder.
 
-Right now, the only implemented function is 'dimg.' This function is used to download images from GEE (Google Earth Engine) using the open-source 'coastsat' repository, specifically by modifying a script called 'SDS.download.
+Right now, the only implemented function is `Download Imagery`. This function is used to download images from GEE (Google Earth Engine) using the open-source 'coastsat' repository, specifically by modifying a script called 'SDS.download.
 
-paraphrased text on how to install the dependencies of coastsat:
-"
+## Configuration
+### Installing the dependencies of coastsat:
 To run the toolbox you first need to install the required Python packages in an environment. To do this we will use **Anaconda**, which can be downloaded freely [here](https://www.anaconda.com/download/). If you are a more advanced user and have **Mamba** installed, use Mamba as it will install everything faster and without problems.
 
 Once you have it installed on your PC, open the Anaconda prompt (in Mac and Linux, open a terminal window) and use the `cd` command (change directory) to go the folder where you have downloaded this repository.
@@ -19,23 +19,16 @@ conda activate coastsat
 conda install -c conda-forge geopandas earthengine-api scikit-image matplotlib astropy notebook -y
 pip install pyqt5
 ```
-"
-after activating coastsat venv 
-
-write this command
+After activating coastsat venv, write this command:
 
     pip install Django==4.2.5
 
-cd to go to the "backend" directory
-
-then write thie command to activate the server
+Then go back to "backend" folder directory and write thie command to activate the server:
 
     py manage.py runserver
-
-to activate the frontend open cmd on the "frontend" directory then write this command after install node.js
-
-    npm start
-    
+### Website link:
+After activating the backend, You can [visit the website](https://mahmoudabdelrady.github.io/ShorelineExtraction-SP/) and download the images.
+## Overview
 
 ![image](images/home_page.png)
 
@@ -50,21 +43,3 @@ to activate the frontend open cmd on the "frontend" directory then write this co
 
 
 ![image](images/Images_links.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
- 
-
-
