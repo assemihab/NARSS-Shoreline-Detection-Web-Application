@@ -39,13 +39,18 @@ to activate the frontend open cmd on the "frontend" directory then write this co
 
 ![image](images/home_page.png)
 
+
 ![image](images/area.png)
+
 
 ![image](images/Downloading.png)
 
+
 ![image](images/Downloading_server.png)
 
+
 ![image](images/Images_links.png)
+
 
 
 
