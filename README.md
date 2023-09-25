@@ -23,6 +23,7 @@ pip install pyqt5
 after activating coastsat venv 
 
 write thie command
+
     pip install Django==4.2.5
 
 cd to go to the "backend" directory
